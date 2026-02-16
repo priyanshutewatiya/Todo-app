@@ -1,0 +1,223 @@
+/* Import modern font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Body background */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    #667eea,
+    #764ba2,
+    #6b8dd6,
+    #8e37d7
+  );
+
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+}
+
+/* Moving gradient animation */
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Glass container */
+
+.container {
+  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.15);
+
+  border-radius: 20px;
+
+  padding: 30px;
+
+  width: 420px;
+
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.25),
+    inset 0 0 10px rgba(255, 255, 255, 0.2);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  animation: fadeIn 1s ease;
+}
+
+/* Heading */
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Form */
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+/* Input */
+
+input {
+  flex: 1;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  border: none;
+
+  outline: none;
+
+  font-size: 15px;
+
+  background: rgba(255, 255, 255, 0.25);
+
+  color: white;
+
+  backdrop-filter: blur(10px);
+
+  transition: 0.3s;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.35);
+
+  transform: scale(1.03);
+}
+
+/* Add button */
+
+form button {
+  border: none;
+
+  padding: 12px 18px;
+
+  border-radius: 10px;
+
+  background: linear-gradient(45deg, #ff9966, #ff5e62);
+
+  color: white;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+form button:hover {
+  transform: scale(1.1);
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* List */
+
+ul {
+  list-style: none;
+
+  padding: 0;
+
+  margin-top: 25px;
+}
+
+/* List item */
+
+li {
+  background: rgba(255, 255, 255, 0.2);
+
+  padding: 12px;
+
+  margin-bottom: 12px;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  color: white;
+
+  backdrop-filter: blur(10px);
+
+  animation: slideUp 0.4s ease;
+}
+
+/* Slide animation */
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* Delete button */
+
+.deleteBtn {
+  border: none;
+
+  padding: 7px 14px;
+
+  border-radius: 8px;
+
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.deleteBtn:hover {
+  transform: scale(1.15);
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Fade container */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: scale(1);
+  }
+}
