@@ -7,3 +7,20 @@
 /*
 CallBack Functions
 */
+
+//PROMISES
+
+let promise = new Promise((resolve , reject)=>{
+    let success = true;
+
+    if(success){
+        resolve("Data Connected");
+    }
+    else{
+        reject("Error in connection");
+    }
+})
+
+//consuming promise
+
+fetch()
