@@ -23,4 +23,13 @@ let promise = new Promise((resolve , reject)=>{
 
 //consuming promise
 
-fetch()
+fetch('https://jsonplaceholder.typicode.com/todos')
+.then(response => response.json())
+.then((json) => {
+ 
+        return json;
+      })
+.then((arr)=>{
+    const result = arr.map((item)=>item.title);
+    console.log(result);
+})
