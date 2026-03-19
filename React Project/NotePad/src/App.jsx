@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 // import './App.css';
+import axios from 'axios';
 
 function App() {
 
