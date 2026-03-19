@@ -1,0 +1,43 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 20px;
+  background-color: #1e1e2f;
+  color: white;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;          
+  width: 100%;
+
+  box-sizing: border-box;
+}
+/* Left */
+.footer-left p {
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Center */
+.footer-center p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Right */
+.footer-right {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-right a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
